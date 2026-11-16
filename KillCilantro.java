@@ -7,6 +7,7 @@ public class KillCilantro {
       System.out.println(KillCilantro("cilantrocilantrocilantro"));
    }
    public static String KillCilantro(String input) {
+      
       int count = 0;
       String temp = "";
       String toReturn = "";
@@ -17,17 +18,18 @@ public class KillCilantro {
      
          if (temp.equals("cilantro")) {
             toReturn += "parsley";
-            count += 7;
+            count += 7; //adds an extra 7 on top of the count++ at the end for a total of 8 to skip the rest of the word
          } else {
             toReturn += input.substring(count, count + 1);
          }
          count ++;
       }
-
+      
       if (count == 0) {
          count++;
       }
       
+      //final letters dont need to be run through a checker because cilantro cannot fit
       toReturn += input.substring(count , input.length());
       
       return toReturn;
