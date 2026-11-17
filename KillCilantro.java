@@ -5,6 +5,7 @@ public class KillCilantro {
       System.out.println(killCilantro("nothinghere"));
       System.out.println(killCilantro("testcilantro"));
       System.out.println(killCilantro("cilantrocilantrocilantro"));
+      System.out.println(killCilantro(""));
    }
    public static String killCilantro(String input) {
       
@@ -30,7 +31,9 @@ public class KillCilantro {
       }
       
       //final letters dont need to be run through a checker because cilantro cannot fit
-      toReturn += input.substring(count , input.length());
+      if (input.length() != 0) {
+         toReturn += input.substring(count , input.length());
+      }
       
       return toReturn;
    }
