@@ -1,12 +1,12 @@
 public class KillCilantro {
    public static void main(String[] args) {
-      System.out.println(KillCilantro("testcilantrotest"));
-      System.out.println(KillCilantro("cilantrotest"));
-      System.out.println(KillCilantro("nothinghere"));
-      System.out.println(KillCilantro("testcilantro"));
-      System.out.println(KillCilantro("cilantrocilantrocilantro"));
+      System.out.println(killCilantro("testcilantrotest"));
+      System.out.println(killCilantro("cilantrotest"));
+      System.out.println(killCilantro("nothinghere"));
+      System.out.println(killCilantro("testcilantro"));
+      System.out.println(killCilantro("cilantrocilantrocilantro"));
    }
-   public static String KillCilantro(String input) {
+   public static String killCilantro(String input) {
       
       int count = 0;
       String temp = "";
